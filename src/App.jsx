@@ -17,14 +17,13 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <main className={classes.content}>
-          <div className={classes.toolbar}>
-            <Routes>
-              <Route path='/' element={<Movies />} />
-              <Route path='/actors/:id' element={<Actors />} />
-              <Route path='/movie/:id' element={<MovieInformation />} />
-              <Route path='/profile/:id' element={<Profile />} />
-            </Routes>
-          </div>
+          <div className={classes.toolbar} />
+          <Routes>
+            <Route path='/' element={<Movies />} />
+            <Route path='/actors/:id' element={<Actors />} />
+            <Route path='/movie/:id' element={<MovieInformation />} />
+            <Route path='/profile/:id' element={<Profile />} />
+          </Routes>
         </main>
       </BrowserRouter>
     </div>
